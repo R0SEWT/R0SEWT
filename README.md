@@ -9,10 +9,11 @@ Soy estudiante de **Computer Science** y desarrollador en Perú con un enfoque e
 - **Análisis de Datos**: Experiencia en la limpieza, procesamiento y visualización de datos utilizando Python y herramientas como Pandas y Matplotlib.
 - **Machine Learning**: Implementación de modelos predictivos y de clasificación usando Scikit-Learn y TensorFlow.
 - **Visualización de Datos**: Tableau y Power BI, con capacidad para crear visualizaciones e informes.
+<!--
 - **Proyectos Relevantes**: 
   - **[Análisis de Sentimientos en Redes Sociales](enlace-al-proyecto)**: Desarrollé un sistema para analizar y visualizar el sentimiento en tiempo real.
   - **[Análisis de Ventas y Tendencias](enlace-al-proyecto)**: Creé un informe detallado sobre las tendencias de ventas usando herramientas de análisis de datos.
-
+-->
 ## 🔧 Herramientas y Tecnologías
 
 - **Lenguajes**: Python, SQL
@@ -46,11 +47,13 @@ Actualmente estoy:
 
 ## 🤝 Conectemos
 
-- [LinkedIn](enlace-a-tu-linkedin)
-- [Twitter](enlace-a-tu-twitter)
-- [Correo Electrónico](mailto:tuemail@example.com)
+- [LinkedIn](https://www.linkedin.com/in/rosewt/)
+- [Certificaciones](https://www.coursera.org/user/5c475ee3e93cd0579b7a95bb0a6deaf8)
+- [Correo Electrónico](mailto:u202216562@upc.edu.pe)
+  
 
+<!--
 ## 📈 Estadísticas
 
 [![Rody's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tuusuario&show_icons=true&hide_title=true&count_private=true&hide=prs)](https://github.com/tuusuario)
-
+-->
