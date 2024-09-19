@@ -1,4 +1,4 @@
-# ¡Hola! Soy Rody 👋
+# Hi! I'm Rody 👋
 
 <!-- Badges -->
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?&style=flat-square&logo=python&logoColor=white)
@@ -9,65 +9,62 @@
 ![Tableau](https://img.shields.io/badge/Tableau-%2335B8E3.svg?&style=flat-square&logo=tableau&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-%23F2C811.svg?&style=flat-square&logo=powerbi&logoColor=black)
 
+## 👨‍💻 About Me
 
+I’m a **Computer Science** student and developer from Peru, with a focus on **Data Analytics**. My passion for data has led me to work on projects related to **Data Science**, **Machine Learning**, and **Data Processing**. I enjoy transforming data into valuable insights and using analytical tools to solve complex problems.
 
-## 👨‍💻 Sobre mí
+## 📊 Data Analytics Experience
 
-Soy estudiante de **Computer Science** y desarrollador en Perú con un enfoque en **Data Analytics**. Mi pasión por los datos me ha llevado a trabajar en proyectos relacionados con **Ciencia de Datos**, **Machine Learning**, y **Procesamiento de Datos**. Me encanta transformar datos en insights valiosos y utilizar herramientas analíticas para resolver problemas complejos.
-
-## 📊 Experiencia en Data Analytics
-
-- **Análisis de Datos**: Experiencia en la limpieza, procesamiento y visualización de datos utilizando Python y herramientas como Pandas y Matplotlib.
-- **Machine Learning**: Implementación de modelos predictivos y de clasificación usando Scikit-Learn y TensorFlow.
-- **Visualización de Datos**: Tableau y Power BI, con capacidad para crear visualizaciones e informes.
-- **Lenguajes Adicionales**: Conocimiento en **C++** y **R** para tareas de programación y análisis de datos.
+- **Data Analysis**: Experience in cleaning, processing, and visualizing data using Python and tools like Pandas and Matplotlib.
+- **Machine Learning**: Implementation of predictive and classification models using Scikit-Learn and TensorFlow.
+- **Data Visualization**: Tableau and Power BI, with the ability to create reports and visualizations.
+- **Additional Languages**: Knowledge of **C++** and **R** for programming and data analysis tasks.
 
 <!--
-- **Proyectos Relevantes**: 
-  - **[Análisis de Sentimientos en Redes Sociales](enlace-al-proyecto)**: Desarrollé un sistema para analizar y visualizar el sentimiento en tiempo real.
-  - **[Análisis de Ventas y Tendencias](enlace-al-proyecto)**: Creé un informe detallado sobre las tendencias de ventas usando herramientas de análisis de datos.
+- **Relevant Projects**: 
+  - **[Social Media Sentiment Analysis](project-link)**: Developed a system to analyze and visualize sentiment in real-time.
+  - **[Sales and Trends Analysis](project-link)**: Created a detailed report on sales trends using data analysis tools.
 -->
 
-## 🔧 Herramientas y Tecnologías
+## 🔧 Tools and Technologies
 
-- **Lenguajes**: Python, SQL, C++, R
-- **Herramientas**: Pandas, NumPy, Matplotlib, Seaborn, Tableau, Power BI
-- **Otras**: Excel, Jupyter Notebooks
+- **Languages**: Python, SQL, C++, R
+- **Tools**: Pandas, NumPy, Matplotlib, Seaborn, Tableau, Power BI
+- **Others**: Excel, Jupyter Notebooks
 
-## 🌱 En Lo Que Estoy Trabajando
+## 🌱 What I'm Working On
 
-Actualmente estoy:
+Currently, I am:
 
-- Refinando mis habilidades en **Machine Learning** y **Visualización de Datos**.
-- Aprendiendo nuevas técnicas en **Data Analytics** y mejorando mi conocimiento en herramientas de BI.
-- Trabajando en proyectos personales para aplicar y expandir mis conocimientos en el análisis de datos.
+- Refining my skills in **Machine Learning** and **Data Visualization**.
+- Learning new techniques in **Data Analytics** and improving my knowledge of BI tools.
+- Working on personal projects to apply and expand my data analysis skills.
 
 <!--
-## 🚀 Proyectos en Progreso
+## 🚀 Ongoing Projects
 
-- **[Análisis de Datos de Ventas](enlace-al-proyecto)**: Proyecto en el que estoy trabajando para analizar patrones de ventas y generar insights para la toma de decisiones.
-- **[Modelo Predictivo de Demandas](enlace-al-proyecto)**: Desarrollando un modelo para predecir la demanda de productos utilizando técnicas de Machine Learning.
+- **[Sales Data Analysis](project-link)**: A project where I analyze sales patterns and generate insights for decision-making.
+- **[Demand Prediction Model](project-link)**: Developing a model to predict product demand using Machine Learning techniques.
 
-## 📝 Blog y Publicaciones
+## 📝 Blog and Publications
 
-- **[Mi Blog sobre Ciencia de Datos](enlace-a-tu-blog)**: Publicaciones sobre temas relevantes en ciencia de datos, análisis y visualización.
-- **[Artículos en Medium](enlace-a-tus-artículos)**: Reflexiones y tutoriales sobre proyectos y aprendizajes en el campo de los datos.
+- **[My Data Science Blog](blog-link)**: Posts on relevant topics in data science, analysis, and visualization.
+- **[Medium Articles](medium-link)**: Reflections and tutorials on projects and learnings in the field of data.
 
-## 🎯 Objetivos
+## 🎯 Goals
 
-- **Adquirir Experiencia Profesional**: Buscar oportunidades para aplicar mis habilidades en entornos reales y enfrentar desafíos en el análisis de datos.
-- **Certificaciones**: Obtener certificaciones adicionales en herramientas de BI y técnicas avanzadas de análisis de datos.
+- **Gain Professional Experience**: Seeking opportunities to apply my skills in real-world environments and tackle challenges in data analysis.
+- **Certifications**: Obtaining additional certifications in BI tools and advanced data analysis techniques.
 -->
 
-## 🤝 Conectemos
+## 🤝 Let’s Connect
 
 - [LinkedIn](https://www.linkedin.com/in/rosewt/)
-- [Correo Electrónico](mailto:u202216562@upc.edu.pe)
-- [Certificaciones](https://www.coursera.org/user/5c475ee3e93cd0579b7a95bb0a6deaf8)
-
+- [Email](mailto:u202216562@upc.edu.pe)
+- [Certifications](https://www.coursera.org/user/5c475ee3e93cd0579b7a95bb0a6deaf8)
 
 <!--
-## 📈 Estadísticas
+## 📈 Stats
 
-[![Rody's GitHub Stats](https://github-readme-stats.vercel.app/api?username=tuusuario&show_icons=true&hide_title=true&count_private=true&hide=prs)](https://github.com/tuusuario)
+[![Rody's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&hide_title=true&count_private=true&hide=prs)](https://github.com/yourusername)
 -->
