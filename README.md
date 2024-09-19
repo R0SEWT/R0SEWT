@@ -9,10 +9,7 @@
 ![Tableau](https://img.shields.io/badge/Tableau-%2335B8E3.svg?&style=flat-square&logo=tableau&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-%23F2C811.svg?&style=flat-square&logo=powerbi&logoColor=black)
 
-![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=R0SEWT.R0SEWT&label=Visits&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)
-![Visitator Counter](https://shields-io-visitor-counter.herokuapp.com/badge?page=R0SEWT.R0SEWT&label=My%20First%20Counter&labelColor=000000&logo=GitHub&logoColor=FFFFFF&color=1D70B8&style=for-the-badge)
 
-<!--https://github.com/ESKYoung/shields-io-visitor-counter -->
 
 ## 👨‍💻 Sobre mí
 
