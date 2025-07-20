@@ -1,4 +1,4 @@
-# Hi! I'm Rody 👋
+# 👋 Hi, I'm Rody — Machine Learning & AI Developer from Peru
 
 <!-- Badges -->
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?&style=flat-square&logo=python&logoColor=white)
@@ -6,65 +6,67 @@
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?&style=flat-square&logo=c%2B%2B&logoColor=white)
 ![R](https://img.shields.io/badge/R-%234C8C2A.svg?&style=flat-square&logo=r&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-%23007ACC.svg?&style=flat-square&logo=python&logoColor=white)
-![Tableau](https://img.shields.io/badge/Tableau-%2335B8E3.svg?&style=flat-square&logo=tableau&logoColor=white)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-%23FF6F00.svg?&style=flat-square&logo=opencv&logoColor=white)
+![H2O.ai](https://img.shields.io/badge/H2O.ai-%23f5d300.svg?&style=flat-square&logoColor=black)
+![FastAPI](https://img.shields.io/badge/FastAPI-%2300C7B7.svg?&style=flat-square&logo=fastapi&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-%23F2C811.svg?&style=flat-square&logo=powerbi&logoColor=black)
 
 ## 👨‍💻 About Me
 
-I’m a **Computer Science** student and developer from Peru, with a focus on **Data Analytics**. My passion for data has led me to work on projects related to **Data Science**, **Machine Learning**, and **Data Processing**. I enjoy transforming data into valuable insights and using analytical tools to solve complex problems.
+I’m a **Computer Science** student and developer from Peru, currently focused on **Machine Learning**, **Data Science**, and **Intelligent Systems**. My goal is to apply AI to real-world problems through clean architectures, efficient training pipelines, and interpretable results.  
+I'm driven by a clear goal: build AI systems that are **practical, transparent, and impactful**.
 
-## 📊 Data Analytics Experience
+## 📚 Highlights
 
-- **Data Analysis**: Experience in cleaning, processing, and visualizing data using Python and tools like Pandas and Matplotlib.
-- **Machine Learning**: Implementation of predictive and classification models using Scikit-Learn and TensorFlow.
-- **Data Visualization**: Tableau and Power BI, with the ability to create reports and visualizations.
-- **Additional Languages**: Knowledge of **C++** and **R** for programming and data analysis tasks.
+- 🔍 Real-time computer vision using keypoints + CNNs
+- 🤖 RAG chatbots with document-aware memory (LlamaIndex + LangChain)
+- 🧪 Trained models with PyTorch + Optuna on HDF5 datasets
+- 🚀 End-to-end ML pipelines with FastAPI, Docker, gRPC
+  
+## 🧠 Focus Areas
 
-<!--
-- **Relevant Projects**: 
-  - **[Social Media Sentiment Analysis](project-link)**: Developed a system to analyze and visualize sentiment in real-time.
-  - **[Sales and Trends Analysis](project-link)**: Created a detailed report on sales trends using data analysis tools.
--->
+- **Data Analytics**: Cleaning, transforming and visualizing data with Pandas, Power BI, Tableau, and Excel.
+- **Machine Learning**: Predictive models, clustering and anomaly detection with Scikit-Learn, H2O.ai and PyTorch.
+- **Computer Vision**: Basic real-time emotion and gesture recognition with CNNs.
+- **Big Data**: Handling large datasets (Parquet, HDF5) and optimizing pipelines with Optuna.
+- **APIs & Deployment**: Using FastAPI and Docker for ML model serving and data processing.
 
-## 🔧 Tools and Technologies
 
-- **Languages**: Python, SQL, C++, R
-- **Tools**: Pandas, NumPy, Matplotlib, Seaborn, Tableau, Power BI
-- **Others**: Excel, Jupyter Notebooks
+## 📈 Projects
 
-## 🌱 What I'm Working On
+- **[Multimodal Sign Language Model](https://github.com/r0sewt/Sign-AI)**: Transformer-based model aligning sign keypoints to LLM embeddings (no glosses).
+- **Crypto Price & Anomaly Detector**: Combines predictive modeling and anomaly detection with SHAP and Optuna.
+- **Flight Delay Analysis**: Big Data project using H2O.ai and Parquet files for pattern discovery and delay prediction.
+- **NAO for Autism**: Emotion recognition pipeline for the NAO robot tested live with children using MobileNet and VGG19.
 
-Currently, I am:
+## 🛠️ Tech Stack
 
-- Refining my skills in **Machine Learning** and **Data Visualization**.
-- Learning new techniques in **Data Analytics** and improving my knowledge of BI tools.
-- Working on personal projects to apply and expand my data analysis skills.
+| Category        | Tools & Languages                                                             |
+|----------------|---------------------------------------------------------------------------------|
+| Languages       | Python, SQL, R, C++                                                            |
+| ML/DS           | PyTorch, Scikit-learn, H2O.ai, Optuna, Pandas, NumPy                          |
+| Visualization   | Seaborn, Matplotlib, Power BI                                        |
+| Infra & Serving | FastAPI, Docker, gRPC, VSCode Remote, SSH                                     |
+| Others          | Git, Obsidian, Jupyter                                                        |
 
-<!--
-## 🚀 Ongoing Projects
+## 🚧 Currently Working On
 
-- **[Sales Data Analysis](project-link)**: A project where I analyze sales patterns and generate insights for decision-making.
-- **[Demand Prediction Model](project-link)**: Developing a model to predict product demand using Machine Learning techniques.
+- 🧠 Legal chatbot with document-based RAG.
+- ✋ Improved sign language model with better augmentations and alignment loss.
+- 📈 Anomaly detection pipeline for real-time crypto trend alerts.
 
-## 📝 Blog and Publications
-
-- **[My Data Science Blog](blog-link)**: Posts on relevant topics in data science, analysis, and visualization.
-- **[Medium Articles](medium-link)**: Reflections and tutorials on projects and learnings in the field of data.
-
-## 🎯 Goals
-
-- **Gain Professional Experience**: Seeking opportunities to apply my skills in real-world environments and tackle challenges in data analysis.
-- **Certifications**: Obtaining additional certifications in BI tools and advanced data analysis techniques.
--->
-
-## 🤝 Let’s Connect
+## 📫 Let’s Connect
 
 - [LinkedIn](https://www.linkedin.com/in/rosewt/)
 - [Email](mailto:u202216562@upc.edu.pe)
 - [Certifications](https://www.coursera.org/user/5c475ee3e93cd0579b7a95bb0a6deaf8)
 
-<!--
-## 📈 Stats
+## 📊 GitHub Activity & Stats
 
-[![Rody's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&hide_title=true&count_private=true&hide=prs)](https://github.com/yourusername)
--->
+![](https://github-readme-stats.vercel.app/api?username=r0sewt&theme=algolia&hide_border=true&include_all_commits=true&count_private=true)  
+![](https://nirzak-streak-stats.vercel.app/?user=r0sewt&theme=algolia&hide_border=true)  
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=r0sewt&theme=algolia&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c)
+
+### 🏅 GitHub Trophies
+
+![](https://github-profile-trophy.vercel.app/?username=r0sewt&theme=onedark&no-frame=true&no-bg=false&margin-w=4)
