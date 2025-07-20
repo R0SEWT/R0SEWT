@@ -57,7 +57,7 @@ I'm driven by a clear goal: build AI systems that are **practical, transparent, 
 
 ## 📫 Let’s Connect
 
-- [LinkedIn](https://www.linkedin.com/in/rosewt/)
+- [LinkedIn](https://www.linkedin.com/in/r0sewt/)
 - [Email](mailto:u202216562@upc.edu.pe)
 - [Certifications](https://www.coursera.org/user/5c475ee3e93cd0579b7a95bb0a6deaf8)
 
