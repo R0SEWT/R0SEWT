@@ -1,5 +1,5 @@
 # 👋 Hi, I'm Rody — Machine Learning & AI Developer from Peru
-
+![Visitas](https://komarev.com/ghpvc/?username=r0sewt&style=flat-square)
 <!-- Badges -->
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?&style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-%2307405f.svg?&style=flat-square&logo=sql&logoColor=white)
