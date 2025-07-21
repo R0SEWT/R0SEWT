@@ -65,7 +65,7 @@ I'm driven by a clear goal: build AI systems that are **practical, transparent, 
 
 ![](https://github-readme-stats.vercel.app/api?username=r0sewt&theme=algolia&hide_border=true&include_all_commits=true&count_private=true)  
 ![](https://nirzak-streak-stats.vercel.app/?user=r0sewt&theme=algolia&hide_border=true)  
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=r0sewt&theme=algolia&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c,css)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=r0sewt&theme=algolia&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c,css,c%2B%2B)
 
 ### 🏅 GitHub Trophies
 
