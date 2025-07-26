@@ -34,7 +34,7 @@ I'm driven by a clear goal: build AI systems that are **practical, transparent, 
 
 ## 📈 Projects
 
-- **[Multimodal Sign Language Model](https://github.com/r0sewt/Sign-AI)**: Transformer-based model aligning sign keypoints to LLM embeddings (no glosses).
+- **Multimodal Sign Language Model**: Transformer-based model aligning sign keypoints to LLM embeddings (no glosses).
 - **Crypto Price & Anomaly Detector**: Combines predictive modeling and anomaly detection with SHAP and Optuna.
 - **Flight Delay Analysis**: Big Data project using H2O.ai and Parquet files for pattern discovery and delay prediction.
 - **NAO for Autism**: Emotion recognition pipeline for the NAO robot tested live with children using MobileNet and VGG19.
