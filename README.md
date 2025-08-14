@@ -11,49 +11,38 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-%2300C7B7.svg?&style=flat-square&logo=fastapi&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-%23F2C811.svg?&style=flat-square&logo=powerbi&logoColor=black)
 
-## 👨‍💻 About Me
+## 👋 Hi, I'm Rody — Data & AI Developer
 
-I’m a **Computer Science** student and developer from Peru, currently focused on **Machine Learning**, **Data Science**, and **Intelligent Systems**. My goal is to apply AI to real-world problems through clean architectures, efficient training pipelines, and interpretable results.  
-I'm driven by a clear goal: build AI systems that are **practical, transparent, and impactful**.
+Data & AI developer from Peru — focused on building predictive, interpretable, and production-ready ML systems.  
+Currently in the 8th semester of Computer Science, ranked in the top 10% of my class.
 
-## 📚 Highlights
+---
 
-- 🔍 Real-time computer vision using keypoints + CNNs
-- 🤖 RAG chatbots with document-aware memory (LlamaIndex + LangChain)
-- 🧪 Trained models with PyTorch + Optuna on HDF5 datasets
-- 🚀 End-to-end ML pipelines with FastAPI, Docker, gRPC
-  
-## 🧠 Focus Areas
+## 🚀 Highlights
+- 🧠 ML pipelines for real-time computer vision and predictive analytics.
+- 📊 Big Data experience with H2O.ai, Parquet, and distributed processing.
+- 🔍 Focus on interpretable AI using SHAP and LIME.
+- 🤝 Collaboration with multidisciplinary teams for applied AI projects.
 
-- **Data Analytics**: Cleaning, transforming and visualizing data with Pandas, Power BI, Tableau, and Excel.
-- **Machine Learning**: Predictive models, clustering and anomaly detection with Scikit-Learn, H2O.ai and PyTorch.
-- **Computer Vision**: Basic real-time emotion and gesture recognition with CNNs.
-- **Big Data**: Handling large datasets (Parquet, HDF5) and optimizing pipelines with Optuna.
-- **APIs & Deployment**: Using FastAPI and Docker for ML model serving and data processing.
+---
 
+## 📂 Featured Projects
+- [**NAO Emotion Classifier**](https://github.com/R0SEWT/nao-cnn-emotion) — Real-time emotion detection for robot NAO using CNNs and keypoints.
+- [**Denmark House Price Analysis**](https://github.com/R0SEWT/Denmark-HousePrices-Analysis) — Predictive modeling with Big Data pipelines and explainability.
+- [**SpotiOrganizer**](https://github.com/R0SEWT/spotify-playlist-organizer) — Playlist automation based on mood and tempo with clustering.
 
-## 📈 Projects
-
-- **Multimodal Sign Language Model**: Transformer-based model aligning sign keypoints to LLM embeddings (no glosses).
-- **Crypto Price & Anomaly Detector**: Combines predictive modeling and anomaly detection with SHAP and Optuna.
-- **Flight Delay Analysis**: Big Data project using H2O.ai and Parquet files for pattern discovery and delay prediction.
-- **NAO for Autism**: Emotion recognition pipeline for the NAO robot tested live with children using MobileNet and VGG19.
+---
 
 ## 🛠️ Tech Stack
 
-| Category        | Tools & Languages                                                             |
-|----------------|---------------------------------------------------------------------------------|
-| Languages       | Python, SQL, R, C++                                                            |
-| ML/DS           | PyTorch, Scikit-learn, H2O.ai, Optuna, Pandas, NumPy                          |
-| Visualization   | Seaborn, Matplotlib, Power BI                                        |
-| Infra & Serving | FastAPI, Docker, gRPC, VSCode Remote, SSH                                     |
-| Others          | Git, Obsidian, Jupyter                                                        |
+| Category        | Tools & Languages                                                  |
+|-----------------|--------------------------------------------------------------------|
+| **Languages**   | Python, SQL, R, C++                                                |
+| **ML/DS**       | PyTorch, Scikit-learn, H2O.ai, Optuna, Pandas, NumPy               |
+| **Data Viz**    | Power BI, Matplotlib, Seaborn                                      |
+| **Infra & API** | FastAPI, Docker, gRPC, Flask, VSCode Remote, SSH                   |
 
-## 🚧 Currently Working On
-
-- 🧠 Legal chatbot with document-based RAG.
-- ✋ Improved sign language model with better augmentations and alignment loss.
-- 📈 Anomaly detection pipeline for real-time crypto trend alerts.
+---
 
 ## 📫 Let’s Connect
 
