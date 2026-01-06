@@ -53,8 +53,8 @@
 ## 📊 GitHub Stats  
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=r0sewt&theme=algolia&hide_border=true&include_all_commits=true&count_private=true" width="55%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=r0sewt&theme=algolia&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c,css,c%2B%2B" width="40%"/>
+  <img src="https://github-stats-iota-ten.vercel.app/api?username=r0sewt&theme=algolia&hide_border=true&include_all_commits=true&count_private=true" width="55%"/>
+  <img src="https://github-stats-iota-ten.vercel.app/api/top-langs/?username=r0sewt&theme=algolia&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c,css,c%2B%2B" width="40%"/>
 </p>  
 
 ---
