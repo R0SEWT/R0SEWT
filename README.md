@@ -102,7 +102,7 @@ assess sensitivity to preprocessing when direct alignment is unavailable.</p>
 <p>
 <a href="https://github.com/R0SEWT/GENO-MAP_Correspondence-Free-Diagnostics-for-Sweet-Potato-Diversity-Maps">Code &amp; experiments</a> ·
 <a href="https://github.com/R0SEWT/GENO-MAP_Correspondence-Free-Diagnostics-for-Sweet-Potato-Diversity-Maps/blob/main/docs/poster/poster_a1_v2.pdf">Poster</a> ·
-<a href="https://github.com/R0SEWT/GENO-MAP_Correspondence-Free-Diagnostics-for-Sweet-Potato-Diversity-Maps/blob/main/docs/explainer-en.md">Explainer</a>
+<a href="https://github.com/R0SEWT/GENO-MAP_Correspondence-Free-Diagnostics-for-Sweet-Potato-Diversity-Maps/blob/main/docs/explainer-es.md">Explainer</a>
 </p>
 
 </td>
