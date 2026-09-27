@@ -1,14 +1,14 @@
-<!-- Badges flotando a la derecha del nombre. align="right" apila de derecha a
-     izquierda, así que van en orden inverso: el primero queda en el extremo.
-     hspace sobrevive al sanitizador de GitHub; vspace no.
-     El nombre va antes que los badges: al revés, en móvil los floats le comen
-     el ancho y el nombre se parte letra por letra. El <br clear> hace que el h1
-     crezca si los badges bajan de línea, en vez de invadir el párrafo siguiente. -->
+<!-- Badges en un bloque alineado a la derecha, bajo el nombre. Antes flotaban
+     con align="right" y en móvil caían en escalera (cada float busca su hueco);
+     como texto en línea dentro de un <div align="right"> bajan de fila juntos
+     y en orden. El contador es de komarev: cambiar de servicio o de username
+     reinicia la cuenta. Cada carga suma una visita: al previsualizar, simularlo. -->
 <h1>Rody Vilchez
-  <img align="right" hspace="2" src="https://komarev.com/ghpvc/?username=r0sewt&style=for-the-badge" alt="Profile views" />
-  <a href="https://www.linkedin.com/in/r0sewt/"><img align="right" hspace="2" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://rosewt.dev"><img align="right" hspace="2" src="https://img.shields.io/badge/rosewt.dev-2C3E50?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website: rosewt.dev" /></a>
-  <br clear="right" />
+  <div align="right">
+    <a href="https://rosewt.dev"><img src="https://img.shields.io/badge/rosewt.dev-2C3E50?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website: rosewt.dev" /></a>
+    <a href="https://www.linkedin.com/in/r0sewt/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <img src="https://komarev.com/ghpvc/?username=r0sewt&style=for-the-badge" alt="Profile views" />
+  </div>
 </h1>
 
 **Applied ML Engineer · AI Systems & Evaluation**
@@ -156,8 +156,19 @@ comparison, backed by reproducible analysis and an interactive dashboard.</p>
 ## GitHub activity
 
 <!-- align="top" en ambas: la card de lenguajes es más baja y sin esto queda
-     flotando al medio de la de stats. -->
+     flotando al medio de la de stats.
+     <picture>: tema algolia en modo oscuro, default en claro (el fondo azul fijo
+     chocaba con la página blanca). Ancho en px, no en %: en escritorio caben
+     lado a lado (450 + 300) y en móvil bajan una por fila a ancho completo, en
+     vez de encogerse juntas hasta no leerse. En srcset las comas separan
+     candidatos, así que el hide= va con %2C. -->
 <p align="center">
-  <img align="top" src="https://github-stats-iota-ten.vercel.app/api?username=r0sewt&theme=algolia&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats for r0sewt" width="55%" />
-  <img align="top" src="https://github-stats-iota-ten.vercel.app/api/top-langs/?username=r0sewt&theme=algolia&hide_border=true&layout=compact&count_private=true&hide=html,jupyter%20notebook,c,css,c%2B%2B" alt="Most used languages for r0sewt" width="40%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-iota-ten.vercel.app/api?username=r0sewt&theme=algolia&hide_border=true&include_all_commits=true&count_private=true" />
+    <img align="top" src="https://github-stats-iota-ten.vercel.app/api?username=r0sewt&theme=default&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats for r0sewt" width="450" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-iota-ten.vercel.app/api/top-langs/?username=r0sewt&theme=algolia&hide_border=true&layout=compact&count_private=true&hide=html%2Cjupyter%20notebook%2Cc%2Ccss%2Cc%2B%2B" />
+    <img align="top" src="https://github-stats-iota-ten.vercel.app/api/top-langs/?username=r0sewt&theme=default&hide_border=true&layout=compact&count_private=true&hide=html%2Cjupyter%20notebook%2Cc%2Ccss%2Cc%2B%2B" alt="Most used languages for r0sewt" width="300" />
+  </picture>
 </p>
