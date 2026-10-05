@@ -17,9 +17,33 @@ es la resolución suficiente para que no se vea borroso a ~470 px de ancho.
 | Asset | Estado | Receta |
 |---|---|---|
 | `geno-map.png` | ✅ 887×473 | nativo del pipeline del póster, ya es 1.875:1 exacto |
-| `chasquifest.png` | ✅ 2400×1280 | `make-chasquifest-card.sh` |
+| `concurrente.png` | ✅ 2400×1280 | `make-concurrente-card.sh` (SVG en `concurrente-card/`) |
+| `chasquifest.png` | fuera del README desde la card de concurrente | `make-chasquifest-card.sh` |
 | `project-kit.gif` | ✅ 846×451, 304 KB | `make-project-kit-gif.sh` |
 | `inwatch.webp` | ✅ 840×448, 53 frames, 2,3 MB | ver abajo |
+
+## concurrente — hecho
+
+La card es un SVG dibujado con código (`concurrente-card/build.mjs`), no una
+captura ni un diagrama genérico de cajas. Muestra **una iteración de Lloyd** de
+`tp/kmeans/concurrente.go` y una sola idea: el planificador decide *quién*
+procesa cada chunk, el índice decide *dónde* se suma.
+
+- **Gantt de 4 goroutines** tomando 8 chunks de un canal FIFO. La planificación
+  es inventada pero coherente con el canal: cada worker libre recibe el chunk
+  siguiente. Los puntos rojos son los `Done()` y la línea punteada, la espera en
+  la barrera `wg.Wait()`.
+- **El tono codifica el índice del chunk** (claro → oscuro). En los carriles
+  queda desordenado; en `parciales[c]` es un gradiente. Esa diferencia es la
+  tesis visual, no la cambies por colores categóricos.
+- **Los números de la columna derecha salen del repo**: 5,82× con P=8 y la
+  inercia idéntica para P = 1…16 (`tp/docs/analisis-pc2.md`), los 3 mutantes
+  (`tp/spin/check.sh`). Si cambian, se editan en `build.mjs`.
+- **Ningún texto baja de 30 px** en el canvas de 2400: a ~470 px queda en ~6 px.
+- **Fuentes incrustadas.** Inter y JetBrains Mono vienen de
+  `@fontsource-variable` y `render.mjs` las mete en base64; si no cargan, el
+  script falla en vez de caer a DejaVu en silencio. El subset `latin` no trae
+  `Σ` (se carga el `greek`) ni `→`: no usar flechas como texto.
 
 ---
 
