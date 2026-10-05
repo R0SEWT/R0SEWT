@@ -17,9 +17,37 @@ es la resolución suficiente para que no se vea borroso a ~470 px de ancho.
 | Asset | Estado | Receta |
 |---|---|---|
 | `geno-map.png` | ✅ 887×473 | nativo del pipeline del póster, ya es 1.875:1 exacto |
-| `chasquifest.png` | ✅ 2400×1280 | `make-chasquifest-card.sh` |
+| `concurrente.png` | ✅ 2400×1280 | `make-concurrente-card.sh` (la figura la genera `R0SEWT/concurrente`) |
+| `chasquifest.png` | fuera del README desde la card de concurrente | `make-chasquifest-card.sh` |
 | `project-kit.gif` | ✅ 846×451, 304 KB | `make-project-kit-gif.sh` |
 | `inwatch.webp` | ✅ 840×448, 53 frames, 2,3 MB | ver abajo |
+
+## concurrente — hecho
+
+La card es **Nueva York en cuatro momentos**: cada zona de taxi pintada con el
+arquetipo de viaje (cluster del K-means) que más viajes tiene a esa hora, con la
+opacidad según el volumen. En cada momento domina en Manhattan un arquetipo
+distinto, y ese contraste es el gancho: se entiende sin leer.
+
+La figura **no se dibuja acá**: la genera `tp/scripts/hero_mapa.py` en
+`R0SEWT/concurrente`, desde los datos del visor (`tp/app/data/`) y los reports
+de benchmark y de Spin. `make-concurrente-card.sh` clona concurrente en la
+revisión `REV`, corre el script y rasteriza el SVG dentro de un `<img>` (como
+GitHub), así que si las fuentes no vinieran incrustadas se notaría.
+
+Por qué un mapa y no un diagrama del worker pool (se probaron dos):
+
+- **A ~470 px gana lo reconocible.** Un mapa con color se recuerda mucho más
+  que un gráfico con ejes, y la impresión estética se forma antes de leer nada.
+  Los diagramas del mecanismo y los paneles de speedup quedaron como figuras
+  del README de concurrente, para quien ya hizo clic.
+- **Rótulos sobre cada mapa**, no una leyenda lejana: el arquetipo dominante y
+  su porcentaje van debajo de cada título. La leyenda de abajo solo cubre los
+  colores que ningún panel rotula y cómo leer la opacidad.
+- **La ingeniería va en el pie**, en una línea: speedup, mismo resultado en
+  cuatro máquinas, Spin. El script falla si alguna de esas cifras deja de ser
+  cierta en los reports.
+- Staten Island y Newark quedan fuera: casi no tienen viajes y estiraban el mapa.
 
 ---
 

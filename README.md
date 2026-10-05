@@ -81,7 +81,7 @@ agents. Non-destructive by default: it skips files that already exist.</p>
 -->
 
 <details>
-<summary><b>More projects</b> · GENO-MAP, ChasquiFest Visual Audit</summary>
+<summary><b>More projects</b> · GENO-MAP, concurrente</summary>
 <br />
 
 <table>
@@ -108,21 +108,23 @@ assess sensitivity to preprocessing when direct alignment is unavailable.</p>
 </td>
 <td width="50%" valign="top">
 
-<h3 id="chasquifest-visual-audit">ChasquiFest Visual Audit</h3>
-<p><sub><b>Data visualization</b> · Case study with synthetic data</sub></p>
+<h3 id="concurrente">concurrente</h3>
+<p><sub><b>Concurrent systems</b> · Go worker pool, model-checked with Spin</sub></p>
 
-<a href="https://r0sewt.github.io/chasquifest-auditoria-visual/">
-  <img src="assets/chasquifest.png" width="100%" alt="Audit card: the headline claims a 57% drop; measured over comparable days the same data moves +11.5%." />
+<a href="https://github.com/R0SEWT/concurrente">
+  <img src="assets/concurrente.png" width="100%" alt="Four maps of New York taxi zones, each zone colored by its most common trip type: business traffic takes Manhattan on weekday mornings, after-work and dinner trips on weekday evenings, daytime outings on weekend afternoons and nightlife on weekend nights." />
 </a>
 
-<p>Five visual audits of how coverage, denominators, and causal claims
-affect interpretation. Each pairs the original claim with a corrected
-comparison, backed by reproducible analysis and an interactive dashboard.</p>
+<p>K-means over 2.8M NYC taxi trips, grouping them into eight trip types
+that take turns over the city through the day. The clustering runs on a
+persistent Go worker pool: 5.8× on 8 workers, and the same result bit for
+bit on four machines, because partial sums are added in chunk order. Spin
+checks the synchronization over every interleaving.</p>
 
 <p>
-<a href="https://github.com/R0SEWT/chasquifest-auditoria-visual">Code &amp; analysis</a> ·
-<a href="https://r0sewt.github.io/chasquifest-auditoria-visual/">Dashboard</a> ·
-<a href="https://github.com/R0SEWT/chasquifest-auditoria-visual/blob/main/informe/informe.pdf">Report</a>
+<a href="https://github.com/R0SEWT/concurrente">Code &amp; benchmarks</a> ·
+<a href="https://github.com/R0SEWT/concurrente/blob/main/tp/spin/README.md">Spin model</a> ·
+<a href="https://github.com/R0SEWT/concurrente/blob/main/tp/docs/analisis-pc2.md">Speedup analysis</a>
 </p>
 
 </td>
