@@ -81,7 +81,7 @@ agents. Non-destructive by default: it skips files that already exist.</p>
 -->
 
 <details>
-<summary><b>More projects</b> · GENO-MAP, ChasquiFest Visual Audit</summary>
+<summary><b>More projects</b> · GENO-MAP, concurrente</summary>
 <br />
 
 <table>
@@ -108,21 +108,22 @@ assess sensitivity to preprocessing when direct alignment is unavailable.</p>
 </td>
 <td width="50%" valign="top">
 
-<h3 id="chasquifest-visual-audit">ChasquiFest Visual Audit</h3>
-<p><sub><b>Data visualization</b> · Case study with synthetic data</sub></p>
+<h3 id="concurrente">concurrente</h3>
+<p><sub><b>Concurrent systems</b> · Go worker pool, model-checked with Spin</sub></p>
 
-<a href="https://r0sewt.github.io/chasquifest-auditoria-visual/">
-  <img src="assets/chasquifest.png" width="100%" alt="Audit card: the headline claims a 57% drop; measured over comparable days the same data moves +11.5%." />
+<a href="https://github.com/R0SEWT/concurrente">
+  <img src="assets/concurrente.png" width="100%" alt="Archify data-flow diagram of one Lloyd iteration: a channel dispatches chunks to persistent goroutines, each writes a private partial, a WaitGroup barrier releases an ordered reduce, and Spin verifies the synchronization." />
 </a>
 
-<p>Five visual audits of how coverage, denominators, and causal claims
-affect interpretation. Each pairs the original claim with a corrected
-comparison, backed by reproducible analysis and an interactive dashboard.</p>
+<p>Lloyd's K-means over 2.8M NYC taxi trips, sequential and with a
+persistent worker pool. Partials are reduced in chunk order, so the result
+is bit-identical for any worker count. Spin checks the synchronization over
+every interleaving; benchmarks run on four machines, from a server to a phone.</p>
 
 <p>
-<a href="https://github.com/R0SEWT/chasquifest-auditoria-visual">Code &amp; analysis</a> ·
-<a href="https://r0sewt.github.io/chasquifest-auditoria-visual/">Dashboard</a> ·
-<a href="https://github.com/R0SEWT/chasquifest-auditoria-visual/blob/main/informe/informe.pdf">Report</a>
+<a href="https://github.com/R0SEWT/concurrente">Code &amp; benchmarks</a> ·
+<a href="https://github.com/R0SEWT/concurrente/blob/main/tp/spin/README.md">Spin model</a> ·
+<a href="https://github.com/R0SEWT/concurrente/blob/main/tp/docs/analisis-pc2.md">Speedup analysis</a>
 </p>
 
 </td>

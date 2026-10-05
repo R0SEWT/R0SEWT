@@ -17,9 +17,29 @@ es la resolución suficiente para que no se vea borroso a ~470 px de ancho.
 | Asset | Estado | Receta |
 |---|---|---|
 | `geno-map.png` | ✅ 887×473 | nativo del pipeline del póster, ya es 1.875:1 exacto |
-| `chasquifest.png` | ✅ 2400×1280 | `make-chasquifest-card.sh` |
+| `concurrente.png` | ✅ 2400×1280 | `make-concurrente-card.sh` (Archify, desde `concurrente.archify.json`) |
+| `chasquifest.png` | fuera del README desde la card de concurrente | `make-chasquifest-card.sh` |
 | `project-kit.gif` | ✅ 846×451, 304 KB | `make-project-kit-gif.sh` |
 | `inwatch.webp` | ✅ 840×448, 53 frames, 2,3 MB | ver abajo |
+
+---
+
+## concurrente — hecho
+
+La card es un diagrama de [Archify](https://github.com/tt-a1i/archify) v3.0.1,
+no una captura del repo. La fuente es `concurrente.archify.json` (dataflow): cada
+nodo cita su línea en `R0SEWT/concurrente` en la revisión fijada en
+`meta.repository`, y `finalize` falla si una cita no existe. Para actualizarla
+tras cambios en el K-means: subir la revisión, ajustar `sources`, correr
+`make-concurrente-card.sh`.
+
+- **Tema light**, igual que las otras cards estáticas (fondo blanco opaco).
+- **Sublabels cortos (≤ 17 caracteres).** Con textos largos Archify achica la
+  fuente del nodo y su gate de legibilidad lo rechaza.
+- **El borde inferior de la barrera es la lectura clave**: `Done()` sube desde
+  los workers y `Wait()` baja a la reducción. Si se reordena, conservar eso.
+- A ~470 px los labels de las flechas quedan en ~5 px; los nombres de nodo se
+  leen. El diagrama interactivo completo se regenera con el mismo script.
 
 ---
 

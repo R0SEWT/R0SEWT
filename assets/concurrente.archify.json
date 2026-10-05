@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Concurrent K-means: one Lloyd iteration over 2.8M NYC taxi trips",
+    "output": ".archify/dataflow-concurrente/concurrente.html",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/R0SEWT/concurrente",
+      "provider": "github",
+      "revision": "9447b1eba82490e75d26dbee8af6274bb347f0d8"
+    },
+    "viewBox": [
+      1080,
+      520
+    ],
+    "legend": {
+      "entries": {
+        "emphasis": {
+          "label": "data path"
+        },
+        "security": {
+          "label": "synchronization"
+        },
+        "dashed": {
+          "label": "check / feedback"
+        },
+        "default": {
+          "label": "read-only"
+        }
+      }
+    }
+  },
+  "stages": [
+    {
+      "label": "Data"
+    },
+    {
+      "label": "Dispatch"
+    },
+    {
+      "label": "Worker pool + barrier"
+    },
+    {
+      "label": "Reduce"
+    },
+    {
+      "label": "Verify + measure"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "gold",
+      "type": "database",
+      "label": "Gold CSV",
+      "sublabel": "2.83M trips",
+      "tag": "6 features",
+      "stage": 0,
+      "row": 1,
+      "sources": [
+        {
+          "path": "tp/src/nyc_tlc/pipeline.py",
+          "line": 26,
+          "label": "bronze → silver → gold"
+        }
+      ]
+    },
+    {
+      "id": "audit",
+      "type": "security",
+      "label": "DuckDB audit",
+      "sublabel": "SQL re-check",
+      "tag": "0 violations",
+      "stage": 0,
+      "row": 2,
+      "sources": [
+        {
+          "path": "tp/src/nyc_tlc/audit.py",
+          "line": 37,
+          "label": "auditar"
+        }
+      ]
+    },
+    {
+      "id": "centroids",
+      "type": "database",
+      "label": "Centroids",
+      "sublabel": "read-only phase",
+      "tag": "k × 6",
+      "stage": 1,
+      "row": 2,
+      "sources": [
+        {
+          "path": "tp/kmeans/concurrente.go",
+          "line": 59,
+          "label": "cent"
+        }
+      ]
+    },
+    {
+      "id": "jobs",
+      "type": "messagebus",
+      "label": "trabajos chan",
+      "sublabel": "chunk ids",
+      "tag": "chan int",
+      "stage": 1,
+      "row": 1,
+      "sources": [
+        {
+          "path": "tp/kmeans/concurrente.go",
+          "line": 65,
+          "label": "make(chan int)"
+        }
+      ]
+    },
+    {
+      "id": "workers",
+      "type": "backend",
+      "label": "P goroutines",
+      "sublabel": "live whole run",
+      "tag": "no mutex",
+      "stage": 2,
+      "row": 1,
+      "sources": [
+        {
+          "path": "tp/kmeans/concurrente.go",
+          "line": 69,
+          "end_line": 85,
+          "label": "worker pool"
+        }
+      ]
+    },
+    {
+      "id": "partials",
+      "type": "database",
+      "label": "parciales[c]",
+      "sublabel": "1 writer/chunk",
+      "tag": "private",
+      "stage": 2,
+      "row": 2,
+      "sources": [
+        {
+          "path": "tp/kmeans/concurrente.go",
+          "line": 128,
+          "label": "procesarChunk"
+        }
+      ]
+    },
+    {
+      "id": "barrier",
+      "type": "security",
+      "label": "WaitGroup barrier",
+      "sublabel": "per iteration",
+      "tag": "sync",
+      "stage": 2,
+      "row": 0,
+      "sources": [
+        {
+          "path": "tp/kmeans/concurrente.go",
+          "line": 120,
+          "end_line": 126,
+          "label": "repartir"
+        }
+      ]
+    },
+    {
+      "id": "reduce",
+      "type": "backend",
+      "label": "Ordered reduce",
+      "sublabel": "in chunk order",
+      "tag": "bit-identical",
+      "stage": 3,
+      "row": 1,
+      "sources": [
+        {
+          "path": "tp/kmeans/concurrente.go",
+          "line": 147,
+          "label": "reducir"
+        }
+      ]
+    },
+    {
+      "id": "spin",
+      "type": "security",
+      "label": "Spin model",
+      "sublabel": "all interleavings",
+      "tag": "mutant caught",
+      "stage": 4,
+      "row": 0,
+      "sources": [
+        {
+          "path": "tp/spin/kmeans.pml",
+          "line": 1,
+          "label": "kmeans.pml"
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "type": "database",
+      "label": "Benchmark JSON",
+      "sublabel": "20 runs · CI",
+      "tag": "4 machines",
+      "stage": 4,
+      "row": 1,
+      "sources": [
+        {
+          "path": "tp/kmeans/cmd/benchmark/main.go",
+          "line": 78,
+          "label": "benchmark"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "load",
+      "from": "gold",
+      "to": "jobs",
+      "label": "load + chunk",
+      "variant": "emphasis",
+      "route": "straight"
+    },
+    {
+      "id": "recheck",
+      "from": "gold",
+      "to": "audit",
+      "label": "re-check",
+      "variant": "dashed",
+      "route": "straight",
+      "labelAt": [
+        100,
+        328
+      ]
+    },
+    {
+      "id": "dispatch",
+      "from": "jobs",
+      "to": "workers",
+      "label": "chunk id",
+      "variant": "emphasis",
+      "route": "straight"
+    },
+    {
+      "id": "read",
+      "from": "centroids",
+      "to": "workers",
+      "label": "read",
+      "variant": "default",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "accumulate",
+      "from": "workers",
+      "to": "partials",
+      "label": "own chunk",
+      "variant": "emphasis",
+      "route": "straight",
+      "labelAt": [
+        530,
+        328
+      ]
+    },
+    {
+      "id": "done",
+      "from": "workers",
+      "to": "barrier",
+      "label": "Done()",
+      "variant": "security",
+      "route": "straight"
+    },
+    {
+      "id": "sum",
+      "from": "partials",
+      "to": "reduce",
+      "label": "chunk order",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [
+        [
+          650,
+          385
+        ],
+        [
+          650,
+          271
+        ]
+      ]
+    },
+    {
+      "id": "release",
+      "from": "barrier",
+      "to": "reduce",
+      "label": "Wait()",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "top",
+      "via": [
+        [
+          745,
+          157
+        ]
+      ]
+    },
+    {
+      "id": "update",
+      "from": "reduce",
+      "to": "centroids",
+      "label": "next iteration",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "via": [
+        [
+          745,
+          465
+        ],
+        [
+          315,
+          465
+        ]
+      ],
+      "labelAt": [
+        530,
+        465
+      ]
+    },
+    {
+      "id": "measure",
+      "from": "reduce",
+      "to": "reports",
+      "label": "inertia + ms",
+      "variant": "emphasis",
+      "route": "straight"
+    },
+    {
+      "id": "model",
+      "from": "spin",
+      "to": "barrier",
+      "label": "verifies sync",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "top",
+      "via": [
+        [
+          960,
+          92
+        ],
+        [
+          530,
+          92
+        ]
+      ],
+      "labelAt": [
+        745,
+        92
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Deterministic",
+      "items": [
+        "Partials are summed in chunk order, not worker order",
+        "Same inertia bit for bit for any P, on x86 and ARM"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Verified, then tested",
+      "items": [
+        "Spin checks exactly-once processing over every interleaving",
+        "A shared-accumulator mutant must fail; go test -race runs on every PR"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Measured",
+      "items": [
+        "5.8× with 8 workers on a 6-core Ryzen; 3.9× on a Pixel 9a",
+        "Pays off above ~20k trips"
+      ]
+    }
+  ]
+}
