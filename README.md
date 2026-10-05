@@ -112,13 +112,14 @@ assess sensitivity to preprocessing when direct alignment is unavailable.</p>
 <p><sub><b>Concurrent systems</b> · Go worker pool, model-checked with Spin</sub></p>
 
 <a href="https://github.com/R0SEWT/concurrente">
-  <img src="assets/concurrente.png" width="100%" alt="One Lloyd iteration: four goroutines take chunks from a channel in arbitrary order, each writes its own partial indexed by chunk, a WaitGroup barrier waits for all of them, and the partials are summed in chunk order into the new centroids. 5.82x speedup with 8 workers, bit-identical result for any worker count, 3 of 3 Spin mutants caught." />
+  <img src="assets/concurrente.png" width="100%" alt="Four maps of New York taxi zones, each zone colored by its most common trip type: business traffic takes Manhattan on weekday mornings, after-work and dinner trips on weekday evenings, daytime outings on weekend afternoons and nightlife on weekend nights." />
 </a>
 
-<p>Lloyd's K-means over 2.8M NYC taxi trips, sequential and with a
-persistent worker pool. Partials are reduced in chunk order, so the result
-is bit-identical for any worker count. Spin checks the synchronization over
-every interleaving; benchmarks run on four machines, from a server to a phone.</p>
+<p>K-means over 2.8M NYC taxi trips, grouping them into eight trip types
+that take turns over the city through the day. The clustering runs on a
+persistent Go worker pool: 5.8× on 8 workers, and the same result bit for
+bit on four machines, because partial sums are added in chunk order. Spin
+checks the synchronization over every interleaving.</p>
 
 <p>
 <a href="https://github.com/R0SEWT/concurrente">Code &amp; benchmarks</a> ·
