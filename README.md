@@ -7,7 +7,7 @@
   <div align="right">
     <a href="https://rosewt.dev"><img src="https://img.shields.io/badge/rosewt.dev-2C3E50?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website: rosewt.dev" /></a>
     <a href="https://www.linkedin.com/in/r0sewt/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <img src="https://komarev.com/ghpvc/?username=r0sewt&style=for-the-badge" alt="Profile views" />
+    <img src="https://komarev.com/ghpvc/?username=r0sewt&style=for-the-badge" alt="" />
   </div>
 </h1>
 
